@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-	$SSHKEY=credentials('sshkey')
+	SSHKEY=credentials('sshkey')
 	}
     triggers {
       pollSCM '* * * * *'
